@@ -2,6 +2,8 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import { BsFillMoonStarsFill } from 'react-icons/bs'
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
+import deved from '../public/sample/dev-ed-wave.png'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -31,6 +33,9 @@ export default function Home() {
         <div className='flex items-center justify-center text-5xl space-x-5'>
           <AiFillLinkedin />
           <AiFillGithub />
+        </div>
+        <div className='relative'>
+          <Image className='w-80' src={deved} alt='dev-test' />
         </div>
       </section>
 
