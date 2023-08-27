@@ -35,7 +35,13 @@ export default function Home() {
           <AiFillGithub />
         </div>
         <div className='relative'>
-          <Image className='w-80' src={deved} alt='dev-test' />
+          <Image className='w-80 mx-auto' src={deved} alt='dev-test' />
+        </div>
+      </section>
+      <section>
+        <div className=''>
+          <h1 className='text-3xl py-2'>Projects...</h1>
+          <p>This is some of the the projects i've worked on</p>
         </div>
       </section>
 
