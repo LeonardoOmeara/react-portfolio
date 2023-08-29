@@ -16,9 +16,23 @@ import web4 from "../public/sample/web4.png";
 import web5 from "../public/sample/web5.png";
 import web6 from "../public/sample/web6.png";
 
-import espbroww3 from "../public/ss/espbroww3.png";
-import bblap1 from "../public/ss/bblap1.png";
-import go_ae from "../public/ss/go_ae.png";
+
+import epd2m from "../public/ss/epd2m.png";
+import epd3m from "../public/ss/epd3m.png";
+import epd4m from "../public/ss/epd4m.png";
+import epd5m from "../public/ss/epd5m.png";
+import bb1m from "../public/ss/bb1m.png";
+import bb3m from "../public/ss/bb3m.png";
+import bb4m from "../public/ss/bb4m.png";
+import go1m from "../public/ss/go1m.png";
+
+
+import AwesomeSlider from 'react-awesome-slider';
+import 'react-awesome-slider/dist/styles.css';
+import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
+import CoreStyles from 'react-awesome-slider/src/core/styles.scss';
+import AnimationStyles from 'react-awesome-slider/src/styled/fold-out-animation/fold-out-animation.scss';
+
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -28,6 +42,7 @@ export default function Home() {
     <main className='bg-white px-10'>
       {/* <TextoPrueba /> */}
       <section className='min-h-screen'>
+      
         <nav className='flex justify-between py-10 mb-12 text-xl'>
           <h1 className='font-burtons'>Leonardo Omeara</h1>
           <ul className='w-[200px] flex justify-around items-center'>
@@ -39,6 +54,7 @@ export default function Home() {
             </li>
           </ul>
         </nav>
+
         <div className='text-center p-10'>
           <h2 className='text-5xl py-2 text-teal-600 font-medium'>Hi, I'am Leonardo Omeara</h2>
           <h3 className='text-2xl py-2'>Systems Engineer and Software Developer</h3>
@@ -46,15 +62,20 @@ export default function Home() {
              incididunt ut labore et dolore magna aliqua.
              </p>
         </div>
+
         <div className='flex items-center justify-center text-5xl space-x-5'>
           <AiFillLinkedin />
           <AiFillGithub />
         </div>
+
         <div className='relative'>
           <Image className='w-80 mx-auto' src={deved} alt='dev-test' />
         </div>
+
       </section>
+
       <section className="py-10">
+
           <div>
             <h3 className="text-3xl py-1 dark:text-white ">Portofolio</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
@@ -70,61 +91,80 @@ export default function Home() {
               programming and teaching.
             </p>
           </div>
-          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1 ">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={espbroww3}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={bblap1}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={go_ae}
-              />
-            </div>
-            {/* <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web4}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web5}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web6}
-              />
-            </div> */}
+          
+          <div className="flex flex-col gap-10 py-10 lg:flex-row">
+              
+            <AwesomeSlider animation="foldOutAnimation" cssModule={[CoreStyles, AnimationStyles]}>
+              <div className="">
+                  <Image
+                    className=""
+                    width={""}
+                    height={"100%"}
+                    layout="responsive"
+                    src={epd4m}
+                  />
+                </div>
+              <div className="">
+                  <Image
+                    className="rounded-lg object-cover"
+                    width={"100%"}
+                    height={"100%"}
+                    layout="responsive"
+                    src={epd3m}
+                  />
+                </div>
+              <div className="">
+                  <Image
+                    className="rounded-lg object-cover"
+                    width={"100%"}
+                    height={"100%"}
+                    layout="responsive"
+                    src={epd5m}
+                  />
+                </div>
+            </AwesomeSlider>
+
+            <AwesomeSlider>
+              <div className="">
+                  <Image
+                    className="rounded-lg object-cover"
+                    width={"100%"}
+                    height={"100%"}
+                    layout="responsive"
+                    src={bb1m}
+                  />
+                </div>
+              <div className="">
+                  <Image
+                    className="rounded-lg object-cover"
+                    width={"100%"}
+                    height={"100%"}
+                    layout="responsive"
+                    src={bb3m}
+                  />
+                </div>
+              <div className="">
+                  <Image
+                    className="rounded-lg object-cover"
+                    width={"100%"}
+                    height={"100%"}
+                    layout="responsive"
+                    src={bb4m}
+                  />
+                </div>
+            </AwesomeSlider>
+  
+            <AwesomeSlider>
+                <div className="">
+                  <Image
+                    className="rounded-lg object-cover"
+                    width={"100%"}
+                    height={"100%"}
+                    layout="responsive"
+                    src={go1m}
+                  />
+                </div>
+              </AwesomeSlider>
           </div>
       </section>
       <section>
