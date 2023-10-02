@@ -25,6 +25,7 @@ import bb1m from "../public/ss/bb1m.png";
 import bb3m from "../public/ss/bb3m.png";
 import bb4m from "../public/ss/bb4m.png";
 import go1m from "../public/ss/go1m.png";
+import { BiLogoJavascript } from 'react-icons/fa';
 
 
 import AwesomeSlider from 'react-awesome-slider';
@@ -77,8 +78,8 @@ export default function Home() {
       <section className="py-10">
 
           <div>
-            <h3 className="text-3xl py-1 dark:text-white ">Portofolio</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+            <h3 className="text-3xl py-1 ">Portofolio</h3>
+            <p className="text-md py-2 leading-8 text-gray-800">
               Since the beginning of my journey as a freelance designer and
               developer, I've done remote work for
               <span className="text-teal-500"> agencies </span>
@@ -86,103 +87,133 @@ export default function Home() {
               and collaborated with talanted people to create digital products
               for both business and consumer use.
             </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+            <p className="text-md py-2 leading-8 text-gray-800">
               I offer from a wide range of services, including brand design,
               programming and teaching.
             </p>
           </div>
           
-          <div className="flex flex-col gap-10 py-10 lg:flex-row">
-              
-            <AwesomeSlider animation="foldOutAnimation" cssModule={[CoreStyles, AnimationStyles]}>
-              <div className="">
-                  <Image
-                    className=""
-                    width={""}
-                    height={"100%"}
-                    layout="responsive"
-                    src={epd4m}
-                  />
-                </div>
-              <div className="">
-                  <Image
-                    className="rounded-lg object-cover"
-                    width={"100%"}
-                    height={"100%"}
-                    layout="responsive"
-                    src={epd3m}
-                  />
-                </div>
-              <div className="">
-                  <Image
-                    className="rounded-lg object-cover"
-                    width={"100%"}
-                    height={"100%"}
-                    layout="responsive"
-                    src={epd5m}
-                  />
-                </div>
-            </AwesomeSlider>
-
-            <AwesomeSlider>
-              <div className="">
-                  <Image
-                    className="rounded-lg object-cover"
-                    width={"100%"}
-                    height={"100%"}
-                    layout="responsive"
-                    src={bb1m}
-                  />
-                </div>
-              <div className="">
-                  <Image
-                    className="rounded-lg object-cover"
-                    width={"100%"}
-                    height={"100%"}
-                    layout="responsive"
-                    src={bb3m}
-                  />
-                </div>
-              <div className="">
-                  <Image
-                    className="rounded-lg object-cover"
-                    width={"100%"}
-                    height={"100%"}
-                    layout="responsive"
-                    src={bb4m}
-                  />
-                </div>
-            </AwesomeSlider>
-  
-            <AwesomeSlider>
+          <div className="flex flex-col gap-20 py-10">
+            
+            <div>
+              <h2 className='text-3xl py-1 text-center'>Escondite para dos Crowdfunding Website</h2>
+              <AwesomeSlider animation="foldOutAnimation" cssModule={[CoreStyles, AnimationStyles]}>
                 <div className="">
-                  <Image
-                    className="rounded-lg object-cover"
-                    width={"100%"}
-                    height={"100%"}
-                    layout="responsive"
-                    src={go1m}
-                  />
-                </div>
+                    <Image
+                      className=""
+                      width={""}
+                      height={"100%"}
+                      layout="responsive"
+                      src={epd4m}
+                    />
+                  </div>
+                <div className="">
+                    <Image
+                      className="rounded-lg object-cover"
+                      width={"100%"}
+                      height={"100%"}
+                      layout="responsive"
+                      src={epd3m}
+                    />
+                  </div>
+                <div className="">
+                    <Image
+                      className="rounded-lg object-cover"
+                      width={"100%"}
+                      height={"100%"}
+                      layout="responsive"
+                      src={epd5m}
+                    />
+                  </div>
               </AwesomeSlider>
+              <h3>Technologies used for this project:</h3>
+              <ul className='flex gap-5'>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Responsive Design</li>
+              </ul>
+            </div>
+
+            <div>
+              <h2 className='text-3xl py-1 text-center'>Batabit Cryptocurrency Webpage</h2>
+              <AwesomeSlider>
+                <div className="">
+                    <Image
+                      className="rounded-lg object-cover"
+                      width={"100%"}
+                      height={"100%"}
+                      layout="responsive"
+                      src={bb1m}
+                    />
+                  </div>
+                <div className="">
+                    <Image
+                      className="rounded-lg object-cover"
+                      width={"100%"}
+                      height={"100%"}
+                      layout="responsive"
+                      src={bb3m}
+                    />
+                  </div>
+                <div className="">
+                    <Image
+                      className="rounded-lg object-cover"
+                      width={"100%"}
+                      height={"100%"}
+                      layout="responsive"
+                      src={bb4m}
+                    />
+                  </div>
+              </AwesomeSlider>
+              <h3>Technologies used for this project:</h3>
+              <ul className='flex gap-5'>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Responsive Design</li>
+              </ul>
+            </div>
+            
+
+            <div>
+              <h2 className='text-3xl py-1 text-center'>Google clone</h2>
+              <div className="">
+                <Image
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                  src={go1m}
+                />
+              </div>
+              <h3>Technologies used for this project:</h3>
+              <ul className='flex gap-5'>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Responsive Design</li>
+              </ul>
+            </div>
+            <a></a>
+            
           </div>
       </section>
       <section>
-          <div>
-            <h3 className="text-3xl py-1 dark:text-white ">Technologies</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+          {/* <div> */}
+            <h3 className="text-3xl py-1 ">Technologies</h3>
+            {/* <p className="text-md py-2 leading-8 text-gray-800">
               Since the beginning of my journey as a freelance designer and
               developer, I've done remote work for
               <span className="text-teal-500"> agencies </span>
               consulted for <span className="text-teal-500">startups </span>
               and collaborated with talanted people to create digital products
               for both business and consumer use.
-            </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+            </p> */}
+            {/* <p className="text-md py-2 leading-8 text-gray-800">
               I offer from a wide range of services, including brand design,
               programming and teaching.
-            </p>
-          </div>
+            </p> */}
+          {/* </div> */}
+          {/* <BiLogoJavascript /> */}
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
               <Image src={design} width={100} height={100} />
